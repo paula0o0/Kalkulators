@@ -1,20 +1,30 @@
 const plusins = document.querySelector('.js-plus');
-const inputins = document.querySelector('.js-input');
+const multiply = document.querySelector('.js-multiply');
+const minus = document.querySelector('.js-minus');
+const divide = document.querySelector('.js-divide');
+const inputins1 = document.querySelector('.js-input1');
+const inputins2 = document.querySelector('.js-input2');
+const answer = document.querySelector('.js-result');
 
-const add = (cipars1, cipars2) => {
-return cipars1 + cipars2
+let firstValue = inputins1.value
+let secondValue = inputins2.value
+
+const Add = (cipars1, cipars2) => {
+    return cipars1 + cipars2
 }
-const subtract = (cipars1, cipars2) => {
+
+const Subtract = (cipars1, cipars2) => {
     return cipars1 - cipars2
 }
-const multiply = (cipars1, cipars2) => {
+
+const Multiply = (cipars1, cipars2) => {
     return cipars1 * cipars2
 }
-const divide = (cipars1, cipars2) => {
+
+const Divide = (cipars1, cipars2) => {
     return cipars1 / cipars2
 }
 
 plusins.addEventListener('click', () => {
-    console.log("mani nospieda")
+    console.log(add(firstValue, secondValue))
 })
-
